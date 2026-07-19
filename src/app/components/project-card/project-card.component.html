@@ -1,0 +1,14 @@
+<a class="project-card" [href]="project().url" target="_blank" rel="noopener">
+  <div class="project-card__icon" [style.background]="project().gradient">
+    @switch (project().icon) {
+      @case ('store') { &#128722; }
+      @case ('code')  { &#128187; }
+    }
+  </div>
+  <div class="project-card__info">
+    <div class="project-card__name">{{ project().name }}</div>
+    <div class="project-card__desc">{{ project().description }}</div>
+    <span class="project-card__tag">{{ project().status }}</span>
+  </div>
+  <div class="project-card__arrow">&#8599;</div>
+</a>

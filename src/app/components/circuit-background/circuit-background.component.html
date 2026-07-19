@@ -1,0 +1,178 @@
+<div class="circuit-bg">
+  <svg class="circuit-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="glow-pulse">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <!-- Traces horizontales -->
+    <g stroke="var(--circuit-line)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0,120 H160 L190,150 H480 L510,120 H700 L730,150 H1200"/>
+      <path d="M0,380 H80 L110,410 H320 L350,380 H520 L550,410 H780 L810,380 H920 L950,410 H1200"/>
+      <path d="M0,650 H200 L230,620 H500 L530,650 H750 L780,620 H1000 L1030,650 H1200"/>
+      <path d="M200,0 V80 L230,110 V250 L200,280"/>
+      <path d="M500,0 V100 L530,130 V200"/>
+      <path d="M900,0 V150 L930,180 V350 L900,380"/>
+      <path d="M350,380 V500 L380,530 V650"/>
+      <path d="M650,410 V520 L680,550 V700 L650,730"/>
+      <path d="M1050,410 V550 L1020,580 V800"/>
+      <path d="M200,650 V800"/>
+      <path d="M780,620 V800"/>
+      <path d="M50,0 V120"/>
+      <path d="M1150,0 V120"/>
+      <path d="M1150,650 V800"/>
+      <path d="M50,650 V800"/>
+      <path d="M120,280 H280 L310,250 H450 L480,280 H600"/>
+      <path d="M600,280 H750 L780,310 H1000 L1030,280 H1200"/>
+      <path d="M50,380 H110"/>
+      <path d="M1050,380 H1200"/>
+      <path d="M0,520 H80 L110,490 H250 L280,520 H450 L480,490 H650 L680,520 H900"/>
+    </g>
+
+    <!-- Vias -->
+    <g fill="var(--circuit-node)">
+      <circle cx="200" cy="120" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="200" cy="120" r="2"/>
+      <circle cx="500" cy="120" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="500" cy="120" r="2"/>
+      <circle cx="800" cy="150" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="800" cy="150" r="2"/>
+      <circle cx="350" cy="380" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="350" cy="380" r="2"/>
+      <circle cx="700" cy="410" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="700" cy="410" r="2"/>
+      <circle cx="1050" cy="410" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="1050" cy="410" r="2"/>
+      <circle cx="200" cy="650" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="200" cy="650" r="2"/>
+      <circle cx="600" cy="650" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="600" cy="650" r="2"/>
+      <circle cx="1000" cy="620" r="5" fill="none" stroke="var(--circuit-node)" stroke-width="1.5"/>
+      <circle cx="1000" cy="620" r="2"/>
+      <circle cx="120" cy="280" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="120" cy="280" r="1.5"/>
+      <circle cx="450" cy="280" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="450" cy="280" r="1.5"/>
+      <circle cx="780" cy="310" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="780" cy="310" r="1.5"/>
+      <circle cx="110" cy="490" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="110" cy="490" r="1.5"/>
+      <circle cx="480" cy="490" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="480" cy="490" r="1.5"/>
+      <circle cx="680" cy="520" r="4" fill="none" stroke="var(--circuit-node)" stroke-width="1.2"/>
+      <circle cx="680" cy="520" r="1.5"/>
+      <circle cx="230" cy="110" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="230" cy="110" r="1.2"/>
+      <circle cx="530" cy="130" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="530" cy="130" r="1.2"/>
+      <circle cx="930" cy="180" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="930" cy="180" r="1.2"/>
+      <circle cx="380" cy="530" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="380" cy="530" r="1.2"/>
+      <circle cx="680" cy="550" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="680" cy="550" r="1.2"/>
+      <circle cx="1020" cy="580" r="3" fill="none" stroke="var(--circuit-node)" stroke-width="1"/>
+      <circle cx="1020" cy="580" r="1.2"/>
+    </g>
+
+    <!-- Chips IC -->
+    <g stroke="var(--circuit-line)" stroke-width="1.2" fill="none">
+      <rect x="430" y="250" width="70" height="60" rx="3"/>
+      <line x1="430" y1="260" x2="420" y2="260"/>
+      <line x1="430" y1="270" x2="420" y2="270"/>
+      <line x1="430" y1="280" x2="420" y2="280"/>
+      <line x1="430" y1="290" x2="420" y2="290"/>
+      <line x1="500" y1="260" x2="510" y2="260"/>
+      <line x1="500" y1="270" x2="510" y2="270"/>
+      <line x1="500" y1="280" x2="510" y2="280"/>
+      <line x1="500" y1="290" x2="510" y2="290"/>
+      <rect x="160" y="460" width="60" height="50" rx="3"/>
+      <line x1="160" y1="470" x2="150" y2="470"/>
+      <line x1="160" y1="480" x2="150" y2="480"/>
+      <line x1="160" y1="490" x2="150" y2="490"/>
+      <line x1="220" y1="470" x2="230" y2="470"/>
+      <line x1="220" y1="480" x2="230" y2="480"/>
+      <line x1="220" y1="490" x2="230" y2="490"/>
+      <rect x="820" y="140" width="60" height="50" rx="3"/>
+      <line x1="820" y1="150" x2="810" y2="150"/>
+      <line x1="820" y1="160" x2="810" y2="160"/>
+      <line x1="820" y1="170" x2="810" y2="170"/>
+      <line x1="880" y1="150" x2="890" y2="150"/>
+      <line x1="880" y1="160" x2="890" y2="160"/>
+      <line x1="880" y1="170" x2="890" y2="170"/>
+    </g>
+
+    <!-- Pulsos animados -->
+    <g filter="url(#glow-pulse)">
+      <!-- Pulso 1: recorre toda la parte superior -->
+      <circle r="3.5" fill="var(--accent)" opacity="0">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M0,120 H160 L190,150 H480 L510,120 H700 L730,150 H1200"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- Pulso 2: recorre la parte media -->
+      <circle r="3" fill="#8b5cf6" opacity="0">
+        <animateMotion dur="7s" repeatCount="indefinite" path="M0,380 H80 L110,410 H320 L350,380 H520 L550,410 H780 L810,380 H920 L950,410 H1200"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="7s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <!-- Pulso 3: recorre la parte inferior -->
+      <circle r="3" fill="#06b6d4" opacity="0">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M0,650 H200 L230,620 H500 L530,650 H750 L780,620 H1000 L1030,650 H1200"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="6s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <!-- Pulso 4: recorre la izquierda vertical -->
+      <circle r="2.5" fill="var(--accent)" opacity="0">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M200,0 V80 L230,110 V250 L200,280 H120"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="5s" repeatCount="indefinite" begin="2s"/>
+      </circle>
+      <!-- Pulso 5: recorre el centro vertical -->
+      <circle r="2.5" fill="#8b5cf6" opacity="0">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M500,0 V100 L530,130 V200"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="5s" repeatCount="indefinite" begin="3s"/>
+      </circle>
+      <!-- Pulso 6: recorre la derecha vertical -->
+      <circle r="2.5" fill="#06b6d4" opacity="0">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M900,0 V150 L930,180 V350 L900,380 H950 L980,410"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+      </circle>
+      <!-- Pulso 7: diagonal traversing middle horizontal band -->
+      <circle r="3" fill="var(--accent)" opacity="0">
+        <animateMotion dur="8s" repeatCount="indefinite" path="M0,520 H80 L110,490 H250 L280,520 H450 L480,490 H650 L680,520 H900"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="8s" repeatCount="indefinite" begin="0.8s"/>
+      </circle>
+      <!-- Pulso 8: vertical descendente izquierda -->
+      <circle r="2" fill="#8b5cf6" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" path="M350,380 V500 L380,530 V650"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="4s" repeatCount="indefinite" begin="2.5s"/>
+      </circle>
+      <!-- Pulso 9: vertical descendente derecha -->
+      <circle r="2" fill="#06b6d4" opacity="0">
+        <animateMotion dur="4s" repeatCount="indefinite" path="M650,410 V520 L680,550 V700 L650,730"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="4s" repeatCount="indefinite" begin="3.5s"/>
+      </circle>
+      <!-- Pulso 10: traversing horizontal band in middle -->
+      <circle r="2.5" fill="var(--accent)" opacity="0">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M120,280 H280 L310,250 H450 L480,280 H600"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="5s" repeatCount="indefinite" begin="1.8s"/>
+      </circle>
+      <!-- Pulso 11: traversing right middle -->
+      <circle r="2.5" fill="#8b5cf6" opacity="0">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M600,280 H750 L780,310 H1000 L1030,280 H1200"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="5s" repeatCount="indefinite" begin="2.8s"/>
+      </circle>
+      <!-- Pulso 12: vertical far right -->
+      <circle r="2" fill="#06b6d4" opacity="0">
+        <animateMotion dur="3.5s" repeatCount="indefinite" path="M1050,410 V550 L1020,580 V800"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" dur="3.5s" repeatCount="indefinite" begin="4s"/>
+      </circle>
+    </g>
+  </svg>
+</div>
+
+<div class="glow-orb glow-orb--1"></div>
+<div class="glow-orb glow-orb--2"></div>
+<div class="glow-orb glow-orb--3"></div>
