@@ -37,6 +37,14 @@ export class AppComponent {
       status: 'Completado'
     },
     {
+      name: 'Json to Pixel Studio',
+      description: 'Generador de imágenes a partir de JSON',
+      url: 'https://elrequena.github.io/json-to-pixel-studio',
+      icon: 'canvas',
+      gradient: 'var(--gradient-1)',
+      status: 'Completado'
+    },
+    {
       name: 'Responsive Store',
       description: 'Tienda responsiva en desarrollo',
       url: 'https://elrequena.github.io/responisve-store',
