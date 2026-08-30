@@ -55,7 +55,7 @@ export class AppComponent {
     {
       name: 'Responsive Store',
       description: 'Tienda responsiva en desarrollo',
-      url: 'https://elrequena.github.io/responisve-store',
+      url: 'https://elrequena.github.io/responsive-store',
       icon: 'store',
       gradient: 'var(--gradient-1)',
       status: 'En desarrollo'
