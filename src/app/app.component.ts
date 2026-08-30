@@ -33,7 +33,7 @@ export class AppComponent {
       description: 'Editor rápido de código TypeScript',
       url: 'https://elrequena.github.io/code-editor',
       icon: 'code',
-      gradient: 'var(--gradient-3)',
+      gradient: 'var(--gradient-1)',
       status: 'Completado'
     },
     {
@@ -41,7 +41,15 @@ export class AppComponent {
       description: 'Generador de imágenes a partir de JSON',
       url: 'https://elrequena.github.io/json-to-pixel-studio',
       icon: 'canvas',
-      gradient: 'var(--gradient-1)',
+      gradient: 'var(--gradient-2)',
+      status: 'Completado'
+    },
+    {
+      name: 'Markdown Viewer',
+      description: 'Visualizador de Markdown en tiempo real',
+      url: 'https://elrequena.github.io/markdown-viewer',
+      icon: 'document',
+      gradient: 'var(--gradient-3)',
       status: 'Completado'
     },
     {
@@ -49,7 +57,7 @@ export class AppComponent {
       description: 'Tienda responsiva en desarrollo',
       url: 'https://elrequena.github.io/responisve-store',
       icon: 'store',
-      gradient: 'var(--gradient-2)',
+      gradient: 'var(--gradient-1)',
       status: 'En desarrollo'
     },
   ]);
